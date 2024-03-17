@@ -84,5 +84,11 @@ const app = () => {
     };
 };   
 
+    song.addEventListener('error',() =>{
+        alert('Failed to load audio. Please try again later.');
+    });
+    video.addEventListener('error',() => {
+        alert('Failed to load video. Please try again later.');
+    });
 //starting the Application
 app();

@@ -9,10 +9,11 @@
 </head>
 <body>
     <div class="app">
-        
+
         <div class="vid-container">
             <video loop>
                 <source src="video/rain.mp4" type="video/mp4">
+                <source src="video/rain.webm" type="video/webm">
             </video>
         </div>
 
@@ -22,7 +23,11 @@
             <button data-time="600">10 Minutes</button>
         </div>
         <div class="player-container">
-            <audio src="sounds/rain.mp3" class="song"></audio>
+            <audio src="sounds/rain.mp3" class="song">
+                <!-- using source element specifies audio files in different formats to be compatible with different browsers and devices -->
+                <source src="sounds/rain.mp3" type="audio/mpeg">
+                <source src="sounds/rain.ogg" type="audio/ogg">
+            </audio>
             <img src="svg/play.svg" alt="play" class="play">
             <svg class="track-outline"
             width="453" height="453" viewBox="0 0 453 453" fill="none" xmlns="http://www.w3.org/2000/svg">
